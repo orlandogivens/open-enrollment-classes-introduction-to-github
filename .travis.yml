@@ -7,3 +7,4 @@ before_script:
 script:
   - bundle exec jekyll build
   - jsonlint -q ./_site/createMap.topojson
+  - script/check-directory.sh
